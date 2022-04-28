@@ -1,8 +1,10 @@
 :root{
     --color-negro: #1b1b1b;
     --color-blanco: #ffffff;
-    --color-gris: #efefef;
-    --color-oro: #c7b8a5;
+    --color-blancooscuro: #efefef;
+    --color-celestito: #ABCDE1;
+    --color-grisoscuro: #5F5E5E;
+    --color-negronotannegro: #373737 ;
 }
 
 body{
@@ -62,9 +64,53 @@ body{
     background-color: var(--color-blanco);
 }
 
+.row-home:hover{
+    background-color: var(--color-negronotannegro);
+    color: var(--color-celestito);
+    border-radius: .5rem;
+}
+
+.containerHome{
+    background-color: var(--color-negro);
+}
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
 /* CALISTENIA */
 
-.animacion-shadows:hover{
+.btn-calis{
+    background-color: transparent;
+    color: var(--color-blanco);
+    padding: .7rem 2.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-routines{
+    background-color: transparent;
+    border: 1px solid var(--color-blanco);
+    border-radius: 1rem;
+    color: var(--color-blanco);
+    padding: .7rem 2.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-routines:hover{
+    background-color: var(--color-blanco);
     color: var(--color-negro);
-background-color: var(--color-blanco);
+    border: 1px solid var(--color-blanco);
+}
+
+
+/* FOOTER */
+
+.footer-color{
+    background-color: var(--color-grisoscuro)
+}
+.copyright{
+    background-color: var(--color-negro);
 }
